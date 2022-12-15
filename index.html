@@ -10,11 +10,38 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      var correctEmail = "kiki@gmail.com";
+      var correctPassword = "kiki22";
+
+      function mudarCorDoTexto() {
+        var elemento = document.getElementById("elemento");
+        if (elemento.style.color == "blue") {
+          elemento.style.color = "gray";
+        } else {
+          elemento.style.color = "blue";
+        }
+      }
+
+      function login() {
+        var emailElement = document.getElementById("email");
+        var passwordElement = document.getElementById("password");
+
+        if (
+          emailElement.value == correctEmail &&
+          passwordElement.value == correctPassword
+        ) {
+          window.location.href = "./perfil.html";
+        } else {
+          console.log("parabens vc nao conseguiu");
+        }
+      }
+    </script>
     <title>Document</title>
   </head>
   <body>
-    <form>
+    <form onsubmit="return false">
       <h1 class="form-title">Sign In</h1>
       <input
         id="email"
@@ -28,7 +55,7 @@
         type="password"
         placeholder="Password"
       />
-      <button class="signin-button">Sign In</button>
+      <button onclick="login()" class="signin-button">Sign In</button>
       <div class="remember-me-container">
         <label class="remember-me">
           <input type="checkbox" style="accent-color: #737373" /> Remember me
@@ -43,7 +70,7 @@
           >sign up now.</a
         >
       </p>
-      <p class="form-info">
+      <p onclick="mudarCorDoTexto()" class="form-info" id="elemento">
         This page is protected by Google reCAPTCHA to ensure you're not a bot.
       </p>
     </form>
