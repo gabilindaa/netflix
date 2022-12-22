@@ -23,6 +23,7 @@ main {
 }
 .img-card {
   width: 136.5px;
+  border-radius: 3px;
 }
 
 .name-card {
