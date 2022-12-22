@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+  background-color: #141414;
+  font-family: "Helvetica Neue", "Roboto", sans-serif;
+}
+main {
+  padding-top: 300px;
+  text-align: center;
+}
+.main-title {
+  color: white;
+  margin: auto;
+  width: max-content;
+  font-size: 48px;
+  font-weight: 400;
+}
+.card {
+  width: fit-content;
+  display: inline-block;
+  margin-right: 27.3px;
+  vertical-align: top;
+}
+.img-card {
+  width: 136.5px;
+}
+
+.name-card {
+  width: fit-content;
+  color: gray;
+  font-size: 20px;
+  font-weight: 400;
+  margin: auto;
+}
+.geren-perfil {
+  color: gray;
+  border: 1px solid gray;
+  padding-top: 8.2px;
+  padding-bottom: 8.2px;
+  padding-right: 24.5px;
+  padding-left: 24.5px;
+  margin-top: 70px;
+  display: inline-block;
+}
